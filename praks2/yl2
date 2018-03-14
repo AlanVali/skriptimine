@@ -1,0 +1,13 @@
+# Ülesanne 2 Skriptimine
+#
+# Muljed
+
+echo  "Alan Väli" # Väljastab mu ees- ja perenime
+echo  "ISP217" # Väljastab mu õppegrupi
+echo  "Väga huvitav" # Väljastab mu arvamuse tunnist
+echo  "Tund on väga huvitav ning olen õppinud kasutama githubi ning õppisin natuke skriptimist" # Väljastab mulje tunnist ja minu arengud
+
+# Skriptimise lõpp
+#
+#
+
