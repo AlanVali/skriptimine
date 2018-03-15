@@ -2,7 +2,7 @@
 # tervitusskript
 #
 echo -n "Tere, " # väljasta ilma reavahetuseta Tere,
-echo -n "User" # väljasta ilma reavahetuseta User
+echo -n "${USER}" # väljasta ilma reavahetuseta präeguse kasutaja nime
 echo "!" # väljasta ! ja tee reavahetus
 #
 # skripti lõpp
