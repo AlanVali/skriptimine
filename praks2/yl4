@@ -1,0 +1,12 @@
+# Ülesanne 2 Skriptimine
+#
+# Kasutajate nimekiri
+
+who | awk '{print $1 "." $2}' | cut -f1 -d" " | cut -f2 -d"." > perenimi # Väljastab perenime
+who | awk '{print $1 "." $2}' | cut -f1 -d" " | cut -f1 -d"." > eesnimi # Väljastab eesnime
+paste -d"." perenimi eesnimi > nimed # saadab nimed faili vastavad korras
+cat nimed | sort | uniq # sorteerib nimed ära
+# Skriptimise lõpp
+#
+#
+
