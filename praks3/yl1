@@ -1,0 +1,11 @@
+#!/bin/bash
+#Ajanäitamise skript
+#
+
+echo Today is  `date '+%d/%m/%Y'`
+echo Time is  `date '+%H:%M'`
+echo "$dt"
+ cal
+#
+#
+#
