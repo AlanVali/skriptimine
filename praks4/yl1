@@ -1,0 +1,11 @@
+#!/bin/bash
+#
+#Tervitus skriptv.2
+echo "Tere! Ma olen $(hostname) arvuti!"
+echo -n "Mis on teie nimi? "
+read yourname
+echo "Tervist, $yourname"
+#
+#
+#
+
