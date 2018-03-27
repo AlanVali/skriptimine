@@ -7,11 +7,21 @@ echo "Sisestage soovitud tordi laius"
 read laius
 echo "Sisestage kui palju kihte tordil on"
 read kihid
+echo "Sisestage küpsise pikkus"
+read kyppikkus
+echo "Sisestage küpsise laius"
+read kyplaius
 echo "Sisestage kui palju küpsiseid ühes pakis on"
 read pakk
+kyppindala=`expr $kyppikkus \* $kyplaius`
 pindala=`expr $pikkus \* $laius` 
+kypsistearv=`expr $pindala / $kyppindala`
 kook=`expr $pindala \* $kihid`
-expr $kook / $pakk
+kyp=`expr $kypsistearv \* $kihid`
+pakkis=`expr $kyp / $pakk`
+j22k=`expr $kypsistearv % $pakk`
+echo "Vaja läheb $kyp pakki ja $j22k küpsist"
+
  
 
 #
