@@ -1,0 +1,20 @@
+#!/bin/bash
+#
+#Kokkamise skript
+echo "Sisestage soovitud tordi pikkus"
+read pikkus
+echo "Sisestage soovitud tordi laius"
+read laius
+echo "Sisestage kui palju kihte tordil on"
+read kihid
+echo "Sisestage kui palju küpsiseid ühes pakis on"
+read pakk
+pindala=`expr $pikkus \* $laius` 
+kook=`expr $pindala \* $kihid`
+expr $kook / $pakk
+ 
+
+#
+#
+#
+
