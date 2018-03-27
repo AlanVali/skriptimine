@@ -1,0 +1,13 @@
+#!/bin/bash
+#
+#Bussis olijate arv
+echo "Sisestage inimeste arv"
+read inimesed
+echo "Sisestage istekohtade arv"
+read istekohad
+busside_arv=`expr $inimesed / $istekohad`
+maha_jaanud=`expr $inimesed % $istekohad`
+echo "Busse läheb vaja $busside_arv ning maha jääb $maha_jaanud"
+#
+#
+#
