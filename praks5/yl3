@@ -1,0 +1,15 @@
+#
+#
+#!/bin/bash
+
+echo "Sisestage oma lahkumispäeva number Pühapäev=0 Laupäev=6"
+read lahkumine
+echo "Sisestage oma reisi kestvus"
+read kestvus
+kokku=$(echo "($lahkumine + $kestvus) % 7" | bc)
+echo "Tagasi tulete $kokku päeval"
+
+#
+#
+#
+
