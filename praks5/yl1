@@ -1,0 +1,16 @@
+#
+#
+#!/bin/bash
+#Kolmnurga külgede arvutaja
+
+echo "Sisesta kolmnurga A külje pikkus"
+read kylg1
+echo "Sisesta kolmnurga B külje pikkus"
+read kylg2
+
+vastus=$(echo "scale=2;sqrt($kylg1^2 + $kylg2^2)" | bc)
+
+echo "Kolmnurga hüpotenuus on $vastus"
+#
+#
+#
