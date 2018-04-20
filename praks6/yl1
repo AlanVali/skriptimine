@@ -1,0 +1,19 @@
+#!/bin/bash
+#
+#Paaris või paaritu arv
+#
+echo "Sisesta suvaline arv"
+read arv
+j22k=$(( $arv % 2 ))
+if [ $j22k -eq 1 ]
+then echo "See pole paarisarv"
+else echo "See on paarisarv"
+fi
+
+
+
+#
+#
+#
+#
+
