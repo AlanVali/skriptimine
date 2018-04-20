@@ -1,0 +1,18 @@
+#!/bin/bash
+#
+#Bussis olijate arv
+echo "Sisestage inimeste arv"
+read inimesed
+echo "Sisestage istekohtade arv"
+read istekohad
+busside_arv=`expr $inimesed / $istekohad`
+maha_jaanud=`expr $inimesed % $istekohad`
+if [ $maha_jaanud -eq 0 ] 
+then echo "Busse läheb vaja $busside_arv"
+else echo "Busse läheb vaja `expr $busside_arv + 1`"
+fi
+
+
+#
+#
+#
