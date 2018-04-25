@@ -1,0 +1,25 @@
+#!/bin/bash
+#
+#
+echo "Sisestage oma vanus"
+read vanus
+if test $vanus -gt 0 -a $vanus -lt 11
+then 
+	echo "Mine osta limonaadi sa liiga noor"
+elif test $vanus -ge 11 -a $vanus -lt 18
+then
+	echo "Piisavalt vana, et energiajooke osta"
+elif test $vanus -ge 18 -a $vanus -lt 63
+then
+	echo "Mine osta suitse vms"
+elif test $vanus -ge 63
+then
+	echo "Kiiktool oleks sulle hea"
+else
+	echo "Sisesta õige vanus"
+fi
+
+#
+#
+#
+
