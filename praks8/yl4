@@ -1,0 +1,30 @@
+'#!/bin/bash
+#
+#
+
+echo "Sisesta suvaline arv"
+read arv
+summa=2
+if [ $arv -eq 0 -o $arv -eq 1 ]; then
+echo "$arv ei ole algarv"
+fi
+if [ $arv = $summa ];
+then echo "$arv on algarv"
+else
+
+while [ $summa -lt $arv ]
+do
+if [ `expr $arv % $summa` -eq 0 ]
+then
+	echo "$arv ei ole algarv"
+
+fi
+summa=`expr $summa + 1`
+
+echo "$arv on algarv"
+exit
+done
+#
+#
+#
+
