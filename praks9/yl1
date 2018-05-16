@@ -1,0 +1,20 @@
+#!/bin/bash
+#
+#
+#
+for (( i = l; i <=5; i++ ))
+do
+	for (( j = l ; j <=5; j++))
+do
+	echo -n "*"
+done
+echo ""
+done	
+
+
+
+
+#
+#
+#
+
