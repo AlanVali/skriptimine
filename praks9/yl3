@@ -1,0 +1,33 @@
+#!/bin/bash
+#
+#
+#
+echo -n "Sisesta ruudu suurus:"
+read rida
+echo -n "Sisesta tärnide arv:"
+read t2rn
+for (( i = 1; i <=$rida; i++ )); do
+echo  -n "$i."
+if [ "$i" == 1 ] || [ "$i" == $rida ];
+then
+	for (( j = 1; j <=$t2rn; j++)); do
+	echo -n "*"
+
+done	
+else
+echo -n "*"
+for ((a=2;a<$t2rn;a++))
+do
+echo -n " "
+done	
+echo -n "*"
+fi
+echo ""
+done
+
+
+
+#
+#
+#
+
